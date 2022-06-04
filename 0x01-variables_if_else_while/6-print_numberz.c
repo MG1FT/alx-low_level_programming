@@ -9,14 +9,11 @@
  */
 int main(void)
 {
-	int i, b = 10;
+	int i;
 
-	srand(time(0));
-	i = rand() - RAND_MAX / 2;
-
-	for (i = 0 ; i < b ; i++)
+	for (i = 0 ; i < 10 ; i++)
 	{
-		putchar(i < b % '0');
+		putchar((i % 10) + '0');
 	}
 	putchar('\n');
 
