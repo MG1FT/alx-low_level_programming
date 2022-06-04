@@ -14,7 +14,6 @@ int main(void)
 	for (i = 0 ; i < 10 ; i++)
 	{
 		putchar(i % 10);
-		printnumber(i / 10)
 	}
 	putchar('\n');
 
