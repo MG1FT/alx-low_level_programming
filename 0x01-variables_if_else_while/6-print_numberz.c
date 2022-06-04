@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
@@ -7,11 +9,14 @@
  */
 int main(void)
 {
-	int i;
+	int i, b = 10;
 
-	for (i = 0 ; i < 10 ; i++)
+	srand(time(0));
+	i = rand() - RAND_MAX / 2;
+
+	for (i = 0 ; i < b ; i++)
 	{
-		putchar(i);
+		putchar(i < b % '0');
 	}
 	putchar('\n');
 
